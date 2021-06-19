@@ -9,45 +9,17 @@ import UIKit
 
 class RootViewController: UITabBarController {
 
+    private let repository = ValueRepository()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let nextVC = self.viewControllers?[0] as? GreenViewController {
-            nextVC.delegate = self
+            nextVC.setup(repository: repository)
         }
 
         if let nextVC = self.viewControllers?[1] as? RedViewController {
-            nextVC.delegate = self
-        }
-
-    }
-}
-
-extension RootViewController: sendValueToRedDelegate {
-    func sendValueToRed(value: Float) {
-        if let nextVC = self.viewControllers?[1] as? RedViewController {
-
-            // RedVCが読み込まれたかをnilチェック。初期画面ではtabbarでRedVCをタップしなければ読み込まれない。
-            guard nextVC.labelForRedVC != nil, nextVC.sliderForRedVC != nil else {
-                nextVC.sliderValueForRedVC = value
-                return
-            }
-
-            // RedVCが読み込まれたあとは、直接値を変更
-            nextVC.labelForRedVC.text = "\(value)"
-            nextVC.sliderForRedVC.value = value
+            nextVC.setup(repository: repository)
         }
     }
-}
-
-extension RootViewController: sendValueToGreenDelegate {
-
-    func sendValueToGreen(value: Float) {
-        if let nextVC = self.viewControllers?[0] as? GreenViewController {
-
-            nextVC.labelForGreenVC.text = "\(value)"
-            nextVC.sliderForGreenVC.value = value
-        }
-    }
-
 }

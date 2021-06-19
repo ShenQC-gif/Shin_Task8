@@ -7,33 +7,31 @@
 
 import UIKit
 
-protocol sendValueToGreenDelegate: class {
-    func sendValueToGreen(value: Float)
-}
-
 class RedViewController: UIViewController {
 
-    @IBOutlet weak var labelForRedVC: UILabel!
-    @IBOutlet weak var sliderForRedVC: UISlider!
+    private var repository: ValueRepository!
 
-    var sliderValueForRedVC = Float()
+    @IBOutlet private weak var valueLabel: UILabel!
+    @IBOutlet private weak var valueSlider: UISlider!
 
-    weak var delegate: sendValueToGreenDelegate?
+    func setup(repository: ValueRepository) {
+        self.repository = repository
+    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        labelForRedVC.text = "\(sliderValueForRedVC)"
-        sliderForRedVC.value = sliderValueForRedVC
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
+        let value = repository.load()
+
+        valueLabel.text = "\(value)"
+        valueSlider.value = value
     }
 
     @IBAction func changeValue(_ sender: Any) {
+        let value = valueSlider.value
 
-        sliderValueForRedVC = sliderForRedVC.value
+        repository.save(value: value)
 
-        labelForRedVC.text = "\(sliderValueForRedVC)"
-
-        delegate?.sendValueToGreen(value: sliderValueForRedVC)
+        valueLabel.text = "\(value)"
     }
-
 }

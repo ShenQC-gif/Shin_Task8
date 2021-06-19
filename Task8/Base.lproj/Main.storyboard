@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="coZ-1P-ec9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="coZ-1P-ec9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,8 +36,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="LhC-dD-PRJ"/>
                     <connections>
-                        <outlet property="labelForRedVC" destination="zfb-bo-fS1" id="8XD-dZ-9vr"/>
-                        <outlet property="sliderForRedVC" destination="1L3-8d-gen" id="xgE-sV-LUX"/>
+                        <outlet property="valueLabel" destination="zfb-bo-fS1" id="EeH-Wj-zfh"/>
+                        <outlet property="valueSlider" destination="1L3-8d-gen" id="LFw-WZ-CFp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGl-SR-m7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,8 +72,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="ypb-In-dDa"/>
                     <connections>
-                        <outlet property="labelForGreenVC" destination="h4x-Hd-aE8" id="Lmo-m4-IqO"/>
-                        <outlet property="sliderForGreenVC" destination="sz9-Ka-fee" id="PhG-Sh-xlG"/>
+                        <outlet property="valueLabel" destination="h4x-Hd-aE8" id="KA0-kf-RaE"/>
+                        <outlet property="valueSlider" destination="sz9-Ka-fee" id="fMP-I2-38Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7h-Z2-fDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

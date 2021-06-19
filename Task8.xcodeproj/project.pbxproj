@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5FDB36A267DD6AC00103075 /* ValueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FDB369267DD6AC00103075 /* ValueRepository.swift */; };
 		EAD0E3B126780D810038D05C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0E3B026780D810038D05C /* AppDelegate.swift */; };
 		EAD0E3B326780D810038D05C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0E3B226780D810038D05C /* SceneDelegate.swift */; };
 		EAD0E3B526780D810038D05C /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0E3B426780D810038D05C /* GreenViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5FDB369267DD6AC00103075 /* ValueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueRepository.swift; sourceTree = "<group>"; };
 		EAD0E3AD26780D810038D05C /* Task8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD0E3B026780D810038D05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD0E3B226780D810038D05C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				EAD0E3D1267811830038D05C /* RootViewController.swift */,
 				EAD0E3B426780D810038D05C /* GreenViewController.swift */,
 				EAD0E3C726780F700038D05C /* RedViewController.swift */,
+				E5FDB369267DD6AC00103075 /* ValueRepository.swift */,
 				EAD0E3B626780D810038D05C /* Main.storyboard */,
 				EAD0E3B926780D850038D05C /* Assets.xcassets */,
 				EAD0E3BB26780D850038D05C /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD0E3D2267811830038D05C /* RootViewController.swift in Sources */,
+				E5FDB36A267DD6AC00103075 /* ValueRepository.swift in Sources */,
 				EAD0E3C826780F700038D05C /* RedViewController.swift in Sources */,
 				EAD0E3B526780D810038D05C /* GreenViewController.swift in Sources */,
 				EAD0E3B126780D810038D05C /* AppDelegate.swift in Sources */,
